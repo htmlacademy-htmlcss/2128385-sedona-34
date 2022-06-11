@@ -10,7 +10,7 @@
   <header class="page-header">
     <div>
       <a href="#">
-        <img src="images/logo.png">
+        <img src="images/logo.png" alt="Логотип">
       </a>
     </div>
     <nav>
@@ -42,15 +42,11 @@
           <a class="button nav-link" href="#">Хочу сюда!</a>
         </li>
       </ul>
-      <form action="catalog.html">
-        <button type="button">Хочу сюда</button>
-      </form>
-    </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <h1 class="visually-hidden">sedona</h1>
+    <section class="sedona">
+      <h1 class="visually-hidden">Седона</h1>
       <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
@@ -59,18 +55,18 @@
         <h3 class="reason-title-with-image">Настоящий городок</h3>
         <p class="reason-nmbr">— №1 —</p>
         <p class="reason">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img>
+        <img src="#" alt="Седона">
       </li>
-      <dl>
-        <dt class="reason-title">Жильё</dt>
-        <dd class="reason">Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
-        <dt class="reason-title">Еда</dt>
-        <dd class="reason">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
-        <dt class="reason-title">Сувениры</dt>
-        <dd class="reason">Не только китайского, но и настоящего местного производства!</dd>
-      </dl>
+      <ul>
+        <li class="reason-title">Жильё</li>
+        <li class="reason">Рекомендуем пожить в настоящем мотеле, всё как в кино!</li>
+        <li class="reason-title">Еда</li>
+        <li class="reason">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</li>
+        <li class="reason-title">Сувениры</li>
+        <li class="reason">Не только китайского, но и настоящего местного производства!</li>
+      </ul>
       <li>
-        <img>
+        <img src="#" alt="Мост дьявола">
         <h3 class="reason-title-with-image">Там есть мост дьявола</h3>
         <p class="reason-nmbr">— №2 —</p>
         <p class="reason">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -91,37 +87,40 @@
         <p class="reason">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
     </ul>
-    <section>
+    <section class="interested">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне </p>
     </section>
-    <form action="catalog.html">
+    <a class="search" href="catalog.html">Поиск гостиницы в Cедоне</a>
+    <!--
+      <form action="https://echo.htmlacademy.ru/">
       <button>Поиск гостиницы в Cедоне</button>
     </form>
+    -->
   </main>
   <footer>
-    <section>
+    <section class="mailing-list">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form method="post" name="mail" action="https://echo.htmlacademy.ru/">
-        <input type="text" value="Ваш e-mail">
-        <input type="submit" value="Подписаться">
+        <input type="text" placeholder="Ваш e-mail">
+        <button type="submit">Подписаться</button>
       </form>
     </section>
     <ul>
       <li>
-        <a href="https://vk.com/htmlacademy" target="_blank">
+        <a class="VK" href="https://vk.com/htmlacademy" target="_blank">
           <img src='#' alt="VK">
         </a>
       </li>
       <li>
-        <a href="https://t.me/htmlacademy " target="_blank">
+        <a class="Telegram" href="https://t.me/htmlacademy " target="_blank">
           <img src="#" alt="Telegram">
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-          <img src="#" alt="youtube">
+        <a class="Youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <img src="#" alt="Youtube">
         </a>
       </li>
     </ul>

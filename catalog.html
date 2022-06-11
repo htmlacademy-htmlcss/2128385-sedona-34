@@ -42,25 +42,21 @@
         <a class="button nav-link" href="#">Хочу сюда!</a>
       </li>
     </ul>
-    <form action="catalog.html">
-      <button type="button">Хочу сюда</button>
-    </form>
-  </ul>
   </nav>
     </header>
     <main>
     <form action="https://echo.htmlacademy.ru/" method="get">
       <fieldset>
         <legend>Инфраструктура:</legend>
-        <label><input type="checkbox" name="infrastructure" checked value="Бассейн">Бассейн</label>
-        <label><input type="checkbox" name="infrastructure" checked value="Парковка">Парковка</label>
-        <label><input type="checkbox" name="infrastructure" value="Wi-Fi">Wi-Fi</label>
+        <label><input type="checkbox" name="infrastructure pool" checked value="Бассейн">Бассейн</label>
+        <label><input type="checkbox" name="infrastructure parking" checked value="Парковка">Парковка</label>
+        <label><input type="checkbox" name="infrastructure wi-fi" value="Wi-Fi">Wi-Fi</label>
       </fieldset>
       <fieldset>
         <legend>Тип жилья:</legend>
-        <label><input type="radio" name="housing" checked value="Гостиница">Гостиница</label>
-        <label><input type="radio" name="housing" value="Мотель">Мотель</label>
-        <label><input type="radio" name="housing" value="Апартаменты">Апартаменты</label>
+        <label><input type="radio" name="housing hotel" checked value="Гостиница">Гостиница</label>
+        <label><input type="radio" name="housing motel" value="Мотель">Мотель</label>
+        <label><input type="radio" name="housing apartment" value="Апартаменты">Апартаменты</label>
       </fieldset>
       <fieldset>
         <legend>Стоимость, ₽:</legend>
@@ -71,46 +67,47 @@
       <button type="reset">Сбросить</button>
     </form>
     <h2>Найдено гостиниц: 38</h2>
-    <select class="sort">
+    <select aria-label="Сортировка" class="sort">
       <option class="sort-option" value="cheap">Самые дешевые</option>
       <option class="sort-option" value="expensive">Самые дорогие</option>
+      <option class="sort-option" value="popular">Самые популярные</option>
     </select>
       <a href="#"><span class="visually-hidden">Показать плитки</span></a>
       <a href="#"><span class="visually-hidden">Показать в галерее</span></a>
       <a href="#"><span class="visually-hidden">Показать список</span></a>
     <ul>
-      <li><a href="#"><img src="#" alt="Amara Resort & Spa"> Amara Resort & Spa</a>
+      <li><a href="#"><img src="#" alt="Amara Resort & Spa"> <h3>Amara Resort & Spa</h3> </a>
         <span>Гостиница</span>
         <span>От 4000 ₽</span>
         <a href="#">Подробнее</a>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
           <button>В избранное</button>
         </form>
         <!--рейтинг-->
       </li>
-      <li><a href="#"><img src="#" alt="Villas at Poco Diablo"> Villas at Poco Diablo</a>
+      <li><a href="#"><img src="#" alt="Villas at Poco Diablo"> <h3>Villas at Poco Diablo</h3> </a>
         <span>Гостиница</span>
         <span>От 5000 ₽</span>
         <a href="#">Подробнее</a>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
           <button>В избранное</button>
         </form>
         <!--рейтинг-->
       </li>
-      <li><a href="#"><img src="#" alt="Desert Quail Inn"> Desert Quail Inn</a>
+      <li><a href="#"><img src="#" alt="Desert Quail Inn"> <h3>Desert Quail Inn</h3> </a>
         <span>Гостиница</span>
         <span>От 2500 ₽</span>
         <a href="#">Подробнее</a>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
           <button>В избранное</button>
         </form>
         <!--рейтинг-->
       </li>
-      <li><a href="#"><img src="#" alt="GreenTree Inn"> GreenTree Inn</a>
+      <li><a href="#"><img src="#" alt="GreenTree Inn"> <h3>GreenTree Inn</h3> </a>
         <span>Гостиница</span>
         <span>От 1500 ₽</span>
         <a href="#">Подробнее</a>
-        <form action="">
+        <form action="https://echo.htmlacademy.ru/">
           <button>В избранное</button>
         </form>
         <!--рейтинг-->
@@ -139,16 +136,20 @@
         <a class="pagination-link" href="#">10</a>
       </li>
     </ul>
-    <!--гостиниц страницы-->
+    <select aria-label="Количесвто страниц" class="page">
+      <option class="nmbr-page" value="4">4</option>
+      <option class="nmbr-page" value="8">8</option>
+      <option class="nmbr-page" value="16">16</option>
+    </select>
   </main>
 
   <footer>
-    <section>
+    <section class="subscribe">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form method="post" name="mail" action="https://echo.htmlacademy.ru/">
-        <input type="text" value="Ваш e-mail">
-        <input type="submit" value="Подписаться">
+        <input type="text" placeholder="Ваш e-mail">
+        <button type="submit">Подписаться</button>
       </form>
     </section>
     <ul>
