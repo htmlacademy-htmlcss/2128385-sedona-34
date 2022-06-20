@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -58,7 +58,7 @@ body {
 
 /*Главная страница*/
 .sedona {
-  background-image: url("/images/index-background.jpg");
+  background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -118,14 +118,14 @@ body {
 }
 
 .subscribe {
-  background-image: url("/images/subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 /*Каталог*/
 .filter {
-  background-image: url("/images/filter.jpg");
+  background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
@@ -140,6 +140,9 @@ body {
   line-height: 28px;
   color: #000000;
   text-align: left;
+}
+
+.hotels a{
   text-decoration: none;
 }
 
