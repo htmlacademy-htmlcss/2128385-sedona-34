@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -21,7 +21,11 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
-  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color:#000000;
 }
 
 .visually-hidden {
@@ -40,19 +44,27 @@ body {
 .nav-link {
   font-weight: 700;
   font-size: 20px;
-  color: #000000;
   text-decoration: none;
 }
 
 .tel {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
+  color:#000000;
   text-transform: uppercase;
-  color: #000000;
+  text-decoration: none;
+}
+
+.button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -64,20 +76,18 @@ body {
 }
 
 .sedona .title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
-.sedona.subtitle {
+.sedona .subtitle {
   color: #333333;
 }
 
 .reason-with-image {
+
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -86,34 +96,64 @@ body {
   text-transform: uppercase;
 }
 
-.reason-title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
+.reason-title,
+.advantages .title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
+.advantages {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages .housing {
+  background-image: url("../images/housing.svg") ;
+  background-repeat: no-repeat;
+  background-color: #83B3D31F;
+}
+
+.advantages .food {
+  background-image: url("../images/food.svg") ;
+  background-repeat: no-repeat;
+}
+
+.souvenirs {
+  background-image: url("../images/souvenirs.svg") ;
+  background-repeat: no-repeat;
+  background-color: #83B3D31F;
+}
+
 .interested h2 {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .interested p {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   color: #333333;
 }
+
+.nmbr3,
+.nmbr5 {
+  background-color: #83B3D31F;
+}
+
+.nbmr3 {
+  background-color: #83B3D333;
+}
+
 .search {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
+  padding: 12px 15px;
   color: #ffffff;
   background-color: #756157;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -121,6 +161,7 @@ body {
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  color: #ffffff;
 }
 
 /*Каталог*/
@@ -132,28 +173,62 @@ body {
   background-color: #000000;
 }
 
+.sedona-hotels {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
 .hotels h3 {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
-  text-align: left;
-}
-
-.hotels a{
-  text-decoration: none;
 }
 
 .housing,
 .price {
-  text-align: left;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.blue {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.subscribe .blue {
+  width: 200px;
+  height: 60px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.subscribe input {
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+
+}
+
+.green {
+  background-color: #7DB54F;
 }
 
 .subscribe-catalog h2 {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -162,9 +237,6 @@ body {
 }
 
 .rating{
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -188,5 +260,4 @@ body {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 4px;
-  color:#000000;
 }
