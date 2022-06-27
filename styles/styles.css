@@ -21,6 +21,8 @@ html {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -30,6 +32,9 @@ body {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   margin: 0 auto;
   width: 1200px;
 }
@@ -125,10 +130,19 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .sedona .subtitle {
   color: #333333;
+}
+
+.nmbr1 {
+  text-align: center;
+}
+
+.nmbr2 {
+  text-align: center;
 }
 
 .advantages-list {
@@ -165,6 +179,7 @@ body {
   line-height: 21px;
   width: 1200px;
   height: 384px;
+  text-align: center;
 }
 
 .advantages .housing {
@@ -185,6 +200,10 @@ body {
   background-repeat: no-repeat;
   background-color: #83B3D31F;
   width: 400px;
+}
+
+.interested {
+  text-align: center;
 }
 
 .interested h2 {
@@ -222,6 +241,7 @@ body {
   background-position: center;
   color: #ffffff;
   height: 411px;
+  text-align: center;
 }
 
 .contacts-container {
@@ -235,7 +255,7 @@ body {
 
 .contacts {
   display: flex;
-  width: 150px;
+  width: 120px;
   justify-content: space-around;
 }
 
@@ -257,6 +277,29 @@ body {
   background-color: #000000;
 }
 
+.filter-catalog {
+  display: flex;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+.submit {
+  width: 160px;
+  height: 48px;
+}
+
+.reset {
+  text-transform: none;
+  width: 160px;
+  height: 48px;
+}
+
 .sedona-hotels {
   font-weight: 700;
   font-size: 60px;
@@ -270,10 +313,22 @@ body {
   text-transform: uppercase;
 }
 
+.hotels {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  justify-content: start;
+  ;
+}
+
 .hotels h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.favorite-in {
+  background-color: #7DB54F;
 }
 
 .housing,
@@ -293,7 +348,14 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
-.subscribe input {
+.subscribe-catalog {
+  color: #000000;
+  height: 411px;
+  text-align: center;
+}
+
+.subscribe input,
+.subscribe-catalog input {
   width: 600px;
   height: 60px;
   background: #F2F2F2;
@@ -301,15 +363,10 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-.favorite-in {
-  background-color: #7DB54F;
-}
-
 .subscribe-catalog h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -323,6 +380,30 @@ body {
 
 .rating p {
   background-color: #F2F2F2;
+}
+
+.pages {
+  display: flex;
+  width: 1056px;
+  justify-content: space-around;
+}
+
+.pagination {
+  display: flex;
+  width: 400px;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+}
+
+.amount select {
+  width: 160px;
+  height: 49px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .pagination-link {
