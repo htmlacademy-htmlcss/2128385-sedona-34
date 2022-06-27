@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.tel {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  padding: 9px 15px 8px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+
+.nav-user {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin-left: auto;
+}
+
+.nav-item .button {
+  background: #756157;
+  border-radius: 4px;
+}
+
+/*Главная страница*/
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
+.sedona {
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sedona .title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sedona .subtitle {
+  color: #333333;
+}
+
+.nmbr1 {
+  text-align: center;
+}
+
+.nmbr2 {
+  text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-with-image {
+  display: flex;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.reason-title-with-image {
+  text-transform: uppercase;
+}
+
+.reason-title,
+.advantages .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+  width: 1200px;
+  height: 384px;
+  text-align: center;
+}
+
+.advantages .housing {
+  background-image: url("../images/housing.svg");
+  background-repeat: no-repeat;
+  background-color: #83B3D31F;
+  width: 400px;
+}
+
+.advantages .food {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  width: 400px;
+}
+
+.souvenirs {
+  background-image: url("../images/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-color: #83B3D31F;
+  width: 400px;
+}
+
+.interested {
+  text-align: center;
+}
+
+.interested h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.interested p {
+  color: #333333;
+}
+
+.nmbr3,
+.nmbr5 {
+  background-color: #83B3D31F;
+  width: 400px;
+}
+
+.nbmr3 {
+  background-color: #83B3D333;
+  width: 400px;
+}
+
+.search {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 12px 15px;
+  background-color: #756157;
+}
+
+.subscribe {
+  background-image: url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  height: 411px;
+  text-align: center;
+}
+
+.contacts-container {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  height: 120px;
+  justify-content: space-around;
+}
+
+.contacts {
+  display: flex;
+  width: 120px;
+  justify-content: space-around;
+}
+
+.tel {
+  margin: 0 auto;
+}
+
+.logo-footer {
+  margin-left: auto;
+}
+
+
+/*Каталог*/
+.filter {
+  background-image: url("../images/filter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.filter-catalog {
+  display: flex;
+}
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+}
+
+.submit {
+  width: 160px;
+  height: 48px;
+}
+
+.reset {
+  text-transform: none;
+  width: 160px;
+  height: 48px;
+}
+
+.sedona-hotels {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotels {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  justify-content: start;
+  ;
+}
+
+.hotels h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.favorite-in {
+  background-color: #7DB54F;
+}
+
+.housing,
+.price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.more {
+  background-color: #756157;
+}
+
+.subscription {
+  width: 200px;
+  height: 60px;
+  padding: 12px 15px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.subscribe-catalog {
+  color: #000000;
+  height: 411px;
+  text-align: center;
+}
+
+.subscribe input,
+.subscribe-catalog input {
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.subscribe-catalog h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.rating p {
+  background-color: #F2F2F2;
+}
+
+.pages {
+  display: flex;
+  width: 1056px;
+  justify-content: space-around;
+}
+
+.pagination {
+  display: flex;
+  width: 400px;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+}
+
+.amount select {
+  width: 160px;
+  height: 49px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 4px;
+}
