@@ -126,7 +126,11 @@ body {
   background-position: center;
 }
 
-.sedona .title {
+.description {
+  background-color: #ffffff;
+}
+
+.description .title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -134,8 +138,9 @@ body {
   text-align: center;
 }
 
-.sedona .subtitle {
+.description .subtitle {
   color: #333333;
+  text-align: center;
 }
 
 .nmbr1 {
@@ -270,6 +275,11 @@ body {
 
 
 /*Каталог*/
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+}
+
 .filter {
   background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
