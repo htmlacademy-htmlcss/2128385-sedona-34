@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-  background-color: #F2F2F2;
 }
 
 body {
@@ -24,12 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 
 .page-container {
@@ -255,8 +254,9 @@ body {
   display: flex;
   margin: 0 auto;
   padding: 0;
+  padding-top: 45px;
+  padding-bottom: 35px;
   width: 1200px;
-  height: 120px;
   justify-content: space-around;
 }
 
@@ -330,7 +330,13 @@ body {
   flex-wrap: wrap;
   width: 1056px;
   justify-content: start;
-  ;
+  padding: 20px;
+  column-gap: 16px;
+  margin-right: 18px;
+}
+
+.hotels:nth-child(3n) {
+  margin-right: 0;
 }
 
 .hotels h3 {
