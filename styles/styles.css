@@ -37,8 +37,12 @@ body {
   flex-grow: 1;
   margin: 0 auto;
   width: 1200px;
+  background-color: #ffffff;
 }
 
+.page-header {
+  display: flex;
+}
 .main-container {
   flex-grow: 1;
 }
@@ -97,16 +101,32 @@ body {
 }
 
 .nav-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 500px;
+  list-style-type: none;
 }
 
 .nav-user {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 300px;
+  list-style-type: none;
   margin-left: auto;
+}
+
+.nav-item {
+  display: block;
+  padding: 20px 17px;
+}
+
+.nav-item .nav-user {
+  min-width: 42px;
+  min-height: 66px;
 }
 
 .nav-item .button {
@@ -124,6 +144,8 @@ body {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .description {
@@ -186,6 +208,7 @@ body {
   width: 1200px;
   height: 384px;
   text-align: center;
+  list-style-type: none;
 }
 
 .advantages .housing {
@@ -229,7 +252,7 @@ body {
   width: 400px;
 }
 
-.nbmr3 {
+.nmbr4 {
   background-color: #83B3D333;
   width: 400px;
 }
@@ -253,17 +276,16 @@ body {
 .contacts-container {
   display: flex;
   margin: 0 auto;
-  padding: 0;
-  padding-top: 45px;
-  padding-bottom: 35px;
-  width: 1200px;
-  justify-content: space-around;
+  padding: 40px 70px 30px;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 .contacts {
   display: flex;
   width: 120px;
   justify-content: space-around;
+  list-style-type: none;
 }
 
 .tel {
@@ -330,14 +352,12 @@ body {
   flex-wrap: wrap;
   width: 1056px;
   justify-content: start;
-  padding: 20px;
   column-gap: 16px;
-  margin-right: 18px;
+  margin-left: 73px;
+  margin-right: 71px;
+  list-style-type: none;
 }
 
-.hotels:nth-child(3n) {
-  margin-right: 0;
-}
 
 .hotels h3 {
   font-weight: 700;
@@ -411,6 +431,7 @@ body {
   width: 400px;
   height: 60px;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .amount {
