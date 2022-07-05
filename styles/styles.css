@@ -31,6 +31,10 @@ body {
   background-color: #F2F2F2;
 }
 
+.logo {
+  margin-right: 30px;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -42,9 +46,14 @@ body {
 
 .page-header {
   display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 70px;
 }
+
 .main-container {
   flex-grow: 1;
+  margin: 0 auto;
 }
 
 .link {
@@ -84,6 +93,7 @@ body {
 .button {
   font-weight: 700;
   font-size: 16px;
+  font-family: inherit;
   line-height: 20px;
   color: #ffffff;
   background-color: #82B3D3;
@@ -112,6 +122,7 @@ body {
 .nav-user {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   margin: 0;
   padding: 0;
   width: 300px;
@@ -132,6 +143,7 @@ body {
 .nav-item .button {
   background: #756157;
   border-radius: 4px;
+  width: 130px;
 }
 
 /*Главная страница*/
@@ -150,6 +162,8 @@ body {
 
 .description {
   background-color: #ffffff;
+  padding-top: 63px;
+  margin-bottom: 90px;
 }
 
 .description .title {
@@ -158,6 +172,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 290px;
+  padding-right: 290px;
+  margin-bottom: 31px;
 }
 
 .description .subtitle {
@@ -179,6 +196,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .reason-with-image {
@@ -189,6 +207,13 @@ body {
 
 .reason-title-with-image {
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.reason-nmbr {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .reason-title,
@@ -197,6 +222,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 0;
+}
+
+.reason {
+  margin: 0;
 }
 
 .advantages {
@@ -211,17 +241,31 @@ body {
   list-style-type: none;
 }
 
+.housing p,
+.food p,
+.souvenirs p {
+  margin: 0;
+}
+
 .advantages .housing {
   background-image: url("../images/housing.svg");
   background-repeat: no-repeat;
   background-color: #83B3D31F;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 182px 81px 85px;
 }
 
-.advantages .food {
+.food {
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 182px 81px 85px;
 }
 
 .souvenirs {
@@ -229,10 +273,17 @@ body {
   background-repeat: no-repeat;
   background-color: #83B3D31F;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 182px 81px 85px;
+
 }
 
 .interested {
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .interested h2 {
@@ -240,37 +291,92 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 auto 29px;
+
 }
 
 .interested p {
+  display: block;
+  width: 592px;
+  height: 52px;
   color: #333333;
+  margin: 29px auto 56px;
+}
+
+.nmbr1,
+.nmbr2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 92px 85px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .nmbr3,
 .nmbr5 {
   background-color: #83B3D31F;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 103px 85px 102px;
 }
 
 .nmbr4 {
   background-color: #83B3D333;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 103px 85px 102px;
 }
 
 .search {
+  display: block;
   font-size: 20px;
   line-height: 36px;
   padding: 12px 15px;
+  margin: 0 auto;
   background-color: #756157;
+  width: 544px;
+  height: 36px;
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
   height: 411px;
   text-align: center;
+}
+
+.subscribe h2 {
+  margin: 0 auto;
+  padding-top: 94px;
+  margin-bottom: 29px;
+}
+
+.subscribe p {
+  display: block;
+  width: 475px;
+  height: 52px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+
+.subscribe input {
+  height: 0;
+  padding: 0;
+}
+
+.subscription {
+  height: 0;
+  padding: 0;
+  font-family: inherit;
 }
 
 .contacts-container {
@@ -286,6 +392,7 @@ body {
   width: 120px;
   justify-content: space-around;
   list-style-type: none;
+  margin: 0;
 }
 
 .tel {
@@ -301,6 +408,7 @@ body {
 .breadcrumbs {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .filter {
@@ -309,6 +417,16 @@ body {
   background-position: center;
   color: #ffffff;
   background-color: #000000;
+  padding: 35px 70px 70px;
+}
+
+.sedona-hotels {
+  margin: 0;
+}
+
+.inner-header {
+  padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 .filter-catalog {
@@ -422,7 +540,6 @@ body {
 
 .pages {
   display: flex;
-  width: 1056px;
   justify-content: space-around;
 }
 
