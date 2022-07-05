@@ -27,7 +27,7 @@
             <a class="nav-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav-list nav-user">
+        <ul class="nav-user">
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -61,13 +61,13 @@
         </header>
         <div class="filter-catalog">
           <div class="left">
-            <fieldset>
+            <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
               <label><input type="checkbox" name="pool" checked value="Бассейн">Бассейн</label>
               <label><input type="checkbox" name="parking" checked value="Парковка">Парковка</label>
               <label><input type="checkbox" name="wi-fi" value="Wi-Fi">Wi-Fi</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="housing-filter">
               <legend>Тип жилья:</legend>
               <label><input type="radio" name="housing" checked value="Гостиница">Гостиница</label>
               <label><input type="radio" name="housing" value="Мотель">Мотель</label>
@@ -80,8 +80,10 @@
               <label><input type="text">от</label>
               <label><input type="text">до</label>
             </fieldset>
-            <button class="button submit" type="submit">Применить</button>
-            <button class="button reset" type="reset">Сбросить</button>
+            <div class="button-filter">
+              <button class="button submit" type="submit">Применить</button>
+              <button class="button reset" type="reset">Сбросить</button>
+            </div>
           </div>
         </div>
       </form>
@@ -95,7 +97,7 @@
       <a href="#"><span class="visually-hidden">Показать в галерее</span></a>
       <a href="#"><span class="visually-hidden">Показать список</span></a>
       <ul class="hotels">
-        <li>
+        <li class="card">
           <a class="link" href="#"><img src="images/hotels/hotel-amara.jpg" alt="Amara Resort & Spa" height="211"
               width="300">
             <h3>Amara Resort & Spa</h3>
@@ -114,7 +116,7 @@
             <p>Рейтинг:8,5</p>
           </div>
         </li>
-        <li>
+        <li class="card">
           <a class="link" href="#"><img src="images/hotels/hotel-villas.jpg" alt="Villas at Poco Diablo" height="211"
               width="300">
             <h3>Villas at Poco Diablo</h3>
@@ -133,7 +135,7 @@
             <p>Рейтинг:9,2</p>
           </div>
         </li>
-        <li>
+        <li class="card">
           <a class="link" href="#"><img src="images/hotels/hotel-desert.jpg" alt="Desert Quail Inn" height="211"
               width="300">
             <h3>Desert Quail Inn</h3>
@@ -151,7 +153,7 @@
             <p>Рейтинг:6,9</p>
           </div>
         </li>
-        <li>
+        <li class="card">
           <a class="link" href="#"><img src="images/hotels/hotel-green.jpg" alt="GreenTree Inn" height="211"
               width="300">
             <h3>GreenTree Inn</h3>
