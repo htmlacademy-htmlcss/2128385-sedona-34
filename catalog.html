@@ -61,13 +61,13 @@
         </header>
         <div class="filter-catalog">
           <div class="left">
-            <fieldset>
+            <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
               <label><input type="checkbox" name="pool" checked value="Бассейн">Бассейн</label>
               <label><input type="checkbox" name="parking" checked value="Парковка">Парковка</label>
               <label><input type="checkbox" name="wi-fi" value="Wi-Fi">Wi-Fi</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="housing-filter">
               <legend>Тип жилья:</legend>
               <label><input type="radio" name="housing" checked value="Гостиница">Гостиница</label>
               <label><input type="radio" name="housing" value="Мотель">Мотель</label>
@@ -80,8 +80,10 @@
               <label><input type="text">от</label>
               <label><input type="text">до</label>
             </fieldset>
-            <button class="button submit" type="submit">Применить</button>
-            <button class="button reset" type="reset">Сбросить</button>
+            <div class="button-filter">
+              <button class="button submit" type="submit">Применить</button>
+              <button class="button reset" type="reset">Сбросить</button>
+            </div>
           </div>
         </div>
       </form>
