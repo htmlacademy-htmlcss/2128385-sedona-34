@@ -48,12 +48,11 @@ body {
   display: flex;
   padding-left: 70px;
   padding-right: 70px;
-  height: 70px;
+  height: 65px;
 }
 
 .main-container {
   flex-grow: 1;
-  margin: 0 auto;
 }
 
 .link {
@@ -205,6 +204,7 @@ body {
 
 .subscribe input,
 .subscribe-catalog input {
+  font-family: inherit;
   line-height: 21px;
   font-size: 18px;
   padding-top: 20px;
@@ -219,9 +219,10 @@ body {
 .contacts-container {
   display: flex;
   margin: 0 auto;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
   justify-content: space-between;
   list-style-type: none;
+
 }
 
 .contacts {
@@ -229,11 +230,12 @@ body {
   width: 120px;
   justify-content: space-around;
   list-style-type: none;
-  margin: 0;
 }
 
 .tel {
   margin: 0 auto;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .logo-footer {
@@ -256,7 +258,7 @@ body {
 
 .description {
   background-color: #ffffff;
-  padding-top: 63px;
+  padding-top: 40px;
   margin-bottom: 90px;
 }
 
@@ -300,6 +302,9 @@ body {
 }
 
 .reason-title-with-image {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
@@ -317,6 +322,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin-top: 0;
+  width: 230px;
 }
 
 .reason {
@@ -434,7 +440,6 @@ body {
   margin: 0 auto;
   background-color: #756157;
   width: 544px;
-  height: 36px;
 }
 
 /*Каталог*/
@@ -446,6 +451,14 @@ body {
   color: #ffffff;
   background-color: #000000;
   padding: 35px 70px 70px 70px;
+  margin-bottom: 35px;
+}
+
+.sedona-hotels {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
 }
 
 .inner-header {
@@ -476,6 +489,8 @@ body {
   gap: 70px;
   width: 366px;
   height: 149px;
+  font-size: 18px;
+  list-style: 21px;
 }
 
 .infrastructure {
@@ -488,6 +503,10 @@ body {
   flex-direction: column;
 }
 
+.infrastructure legend,
+.housing-filter legend {
+  font-weight: 700;
+}
 .right {
   display: flex;
   justify-content: flex-end;
@@ -506,11 +525,20 @@ body {
   height: 48px;
 }
 
-.sedona-hotels {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-  margin: 0;
+.sort-result {
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+  margin-bottom: 56px;
+}
+
+.sort {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 20px;
+  height: 49px;
+  width: 290px;
 }
 
 .result {
@@ -518,58 +546,117 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-right: 191px;
 }
 
 .hotels {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1056px;
-  justify-content: start;
-  column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  grid-column-gap: 20px;
+  list-style-type: none;
+  padding: 0 20px 0;
   margin-left: 73px;
   margin-right: 71px;
-  list-style-type: none;
+  margin-bottom: 66px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 211px 28px min-content min-content 37px;
+  grid-template-columns: 140px 20px 140px 20px;
+  grid-row-gap: 16px;
+  height: 438px;
+}
+
+.hotels .link {
+  grid-column: 1/4;
+}
+
+.hotels img {
+  grid-row: 1/2;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .hotels h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  grid-row: 2/3;
+}
+
+.favorite {
+  text-align: center;
+  min-width: 140px;
+  margin: 0;
+  grid-column: 3/4;
+  grid-row: 4/5;
 }
 
 .favorite-in {
   background-color: #7DB54F;
 }
 
-.housing,
+.housing{
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
 .price {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+  grid-column: 3/4;
+  grid-row: 3/4;
 }
 
 .more {
-  padding-top: 9px;
-  padding-bottom: 8px;
   text-align: center;
   background-color: #756157;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  border-radius: 0;
+}
 
+.rating-star {
+  text-align: start;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  margin-bottom: 20px;
 }
 
 .rating {
   font-size: 16px;
   line-height: 20px;
+  height: 27px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-}
-
-.rating p {
   background-color: #F2F2F2;
+  margin: 0;
+  padding-top: 10px;
+  grid-column: 3/4;
+  grid-row: 5/6;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
 .pages {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 73px;
+  padding-right: 71px;
+  align-items: center;
+  padding: 0px;
+  gap: 270px;
 }
 
 .pagination {
@@ -578,6 +665,7 @@ body {
   height: 60px;
   justify-content: space-between;
   list-style-type: none;
+  align-items: center;
 }
 
 .amount {
@@ -597,10 +685,15 @@ body {
   text-decoration: none;
   border: 1px solid #82B3D3;
   border-radius: 4px;
+  font-size: 20px;
+  line-height: 36px;
+  width: 60px;
+  height: 60px;
 }
 
 .pagination-current {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 4px;
+  color: #000000;
 }
