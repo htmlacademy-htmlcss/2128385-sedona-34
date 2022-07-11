@@ -727,14 +727,15 @@ button:active {
 }
 
 .view {
-  width: 52px;
-  height: 52px;
   padding: 17px 16px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
 }
 
+.view svg {
+  display: block;
+}
 .view-current {
   border: 2px solid #000000;
 }
