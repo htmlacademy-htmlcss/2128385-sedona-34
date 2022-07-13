@@ -366,7 +366,8 @@ body {
   list-style-type: none;
   gap: 27px;
   padding: 10px;
-  padding-left: 10px;
+  padding-top: 0;
+
 }
 
 .icon-contact {
