@@ -373,15 +373,21 @@ body {
   fill: #83b3d3;
 }
 
-.contacts a:hover .icon-contact {
+.vk:hover .icon-contact,
+.tg:hover .icon-contact,
+.youtube:hover .icon-contact {
   fill: #68a2ca;
 }
 
-.contacts a:active .icon-contact {
+.vk:active .icon-contact,
+.tg:active .icon-contact,
+.youtube:active .icon-contact {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.contacts a:focus .icon-contact {
+.vk:focus .icon-contact,
+.tg:focus .icon-contact,
+.youtube:focus .icon-contact {
   fill: #68a2ca;
 }
 
