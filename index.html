@@ -6,6 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
 </head>
 
 <body>
@@ -139,6 +140,7 @@
           <ul class="contacts">
             <li>
               <a href="https://vk.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">ВКонтакте</span>
                 <svg class="icon-contact" aria-hidden="true" focusable="false" width="25" height="14"
                   viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -148,6 +150,7 @@
             </li>
             <li>
               <a href="https://t.me/htmlacademy " target="_blank">
+                <span class="visually-hidden">Телеграм</span>
                 <svg class="icon-contact" aria-hidden="true" focusable="false" width="18" height="16"
                   viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -157,6 +160,7 @@
             </li>
             <li>
               <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+                <span class="visually-hidden">Youtube</span>
                 <svg class="icon-contact" aria-hidden="true" focusable="false" width="23" height="18"
                   viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -170,6 +174,7 @@
         </li>
         <li>
           <a class="logo-footer" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип Академии</span>
             <svg aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z" />
@@ -203,7 +208,7 @@
   </div>
   <div class="modal-container modal-container-close">
     <div class="modal modal-search">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -213,7 +218,8 @@
           <input class="date" type="text" placeholder="27 апреля 2020" id="check-in">
           <button class="calendar-in" type="button">
             <span class="visually-hidden">Выбрать дату заезда</span>
-            <svg width="17" height="15" viewBox="0 0 17 15" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.86426 10C6.16426 10 6.36426 9.8 6.36426 9.5C6.36426 9.2 6.16426 9 5.86426 9C5.56426 9 5.36426 9.2 5.36426 9.5C5.36426 9.8 5.56426 10 5.86426 10Z" />
               <path
@@ -241,11 +247,12 @@
           <p class="error message">Мы не можем отправить вас в прошлое.</p>
         </div>
         <div class="modal-part">
-          <label class="modal-subtitle" for="chek-out">Дата Выезда:</label>
+          <label class="modal-subtitle" for="check-out">Дата Выезда:</label>
           <input class="date" type="text" placeholder="1 сентября 2021" id="check-out">
           <button class="calendar-out" type="button">
             <span class="visually-hidden">Выбрать дату выезда</span>
-            <svg width="17" height="15" viewBox="0 0 17 15" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.86426 10C6.16426 10 6.36426 9.8 6.36426 9.5C6.36426 9.2 6.16426 9 5.86426 9C5.56426 9 5.36426 9.2 5.36426 9.5C5.36426 9.8 5.56426 10 5.86426 10Z" />
               <path
@@ -276,49 +283,57 @@
           <div class="adults">
             <label class="modal-subtitle" for="adult">Взрослые:</label>
             <span class="counter">
-              <button class="minus">
+              <button class="minus" type="button">
                 <span class="visually-hidden">Уменьшить</span>
-                <svg width="15" height="2" viewBox="0 0 15 2" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
                 </svg>
               </button>
-            <input class="guest-amount" type="number" id="adult" value="2">
-            <button class="plus">
-              <span class="visually-hidden">Увеличить</span>
-              <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-              </svg>
-            </button>
+              <input class="guest-amount" type="number" id="adult" value="2">
+              <button class="plus" type="button">
+                <span class="visually-hidden">Увеличить</span>
+                <svg width="14" height="14" aria-hidden="true" focusable="false" viewBox="0 0 14 14"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                </svg>
+              </button>
             </span>
           </div>
           <div class="childs">
             <label class="modal-subtitle" for="child">Дети: &nbsp;</label>
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-                  <svg width="3" height="12" viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.114258 0H2.11426V2H0.114258V0ZM2.11426 12H0.114258V3H2.11426V12Z" fill="white"/>
-                    </svg>
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            <span class="tooltip">
+              <span class="visually-hidden">Дополнительная информация</span>
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                <svg aria-hidden="true" focusable="false" width="3" height="12" viewBox="0 0 3 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.114258 0H2.11426V2H0.114258V0ZM2.11426 12H0.114258V3H2.11426V12Z" fill="white" />
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
             </span>
             <span class="counter">
-              <button class="minus">
+              <button class="minus" type="button">
                 <span class="visually-hidden">Уменьшить</span>
-                <svg width="15" height="2" viewBox="0 0 15 2" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
                 </svg>
               </button>
               <input class="guest-amount" type="number" id="child" value="1">
-              <button class="plus">
+              <button class="plus" type="button">
                 <span class="visually-hidden">Увеличить</span>
-                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                 </svg>
               </button>
             </span>
           </div>
         </div>
-        <button class="button booking">Найти</button>
+        <button class="button booking" type="button">Найти</button>
       </section>
     </div>
   </div>
