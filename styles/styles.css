@@ -48,6 +48,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 25px 20px rgba(0, 0, 0, 0.15);
 }
 
 .page-header {
@@ -83,6 +84,8 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: #000000;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .nav-link:hover {
@@ -94,33 +97,11 @@ body {
 }
 
 .nav-link:focus {
-  border: 1px solid #68a2ca;
+  outline: 1px solid #68a2ca;
 }
 
 .nav-link-current {
   border-bottom: 2px solid #756257;
-  padding-bottom: 19px;
-}
-
-.tel {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.tel:hover {
-  color: #756157;
-}
-
-.tel:focus {
-  color: #756157;
-}
-
-.tel:active {
-  color: rgba(117, 97, 87, 0.3);
 }
 
 .button {
@@ -190,10 +171,15 @@ body {
 
 .nav-item {
   display: block;
+  box-sizing: border-box;
 }
 
 .nav-user .nav-item {
   min-width: 42px;
+}
+
+.nav-user .nav-link {
+  padding-left: 10px;
 }
 
 .nav-item .button {
@@ -225,10 +211,10 @@ body {
 }
 
 .navigation-icon {
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
-  left: 10px;
+  left: 0;
   right: 0;
   margin: auto 0;
   fill: #000000;
@@ -261,7 +247,7 @@ body {
   border-radius: 50%;
   letter-spacing: -0.1em;
   left: 22px;
-  top: -18px;
+  top: 12px;
 }
 
 .subscribe {
@@ -271,6 +257,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
+  background-color: #000000;
   padding-bottom: 94px;
   text-align: center;
 }
@@ -362,12 +349,16 @@ body {
 
 .contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   gap: 27px;
   padding: 10px;
-  padding-top: 0;
-
+  margin: 0;
+  margin-right: 42px;
+  font: initial;
+  align-items: center;
+  max-width: 142px;
 }
 
 .icon-contact {
@@ -380,21 +371,43 @@ body {
   fill: #68a2ca;
 }
 
-.vk:active .icon-contact,
-.tg:active .icon-contact,
-.youtube:active .icon-contact {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .vk:focus .icon-contact,
 .tg:focus .icon-contact,
 .youtube:focus .icon-contact {
   fill: #68a2ca;
 }
 
+.vk:active .icon-contact,
+.tg:active .icon-contact,
+.youtube:active .icon-contact {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.tel {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.tel:hover {
+  color: #756157;
+}
+
+.tel:focus {
+  color: #756157;
+}
+
+.tel:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .logo-footer {
   margin-left: auto;
 }
+
 
 .logo-footer svg {
   fill: #000000;
@@ -421,6 +434,7 @@ body {
 
 .sedona {
   background-image: url("../images/angle-white.svg"), url("../images/index-background.jpg");
+  background-color: #000000;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   padding-top: 51px;
@@ -502,6 +516,7 @@ body {
 
 .advantages {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -643,6 +658,24 @@ body {
   margin-bottom: 44px;
 }
 
+.breadcrumbs-link {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
 .breadcrumbs-item {
   margin-right: 10px;
 }
@@ -659,15 +692,15 @@ body {
 }
 
 .breadcrumbs-item:hover svg {
-  fill: #47b5ff;
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-item:active svg {
-  fill: #1f7ebd;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item:focus svg {
-  fill: #376dd1;
+  fill: #ffffff;
 }
 
 .filter-catalog {
@@ -748,7 +781,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.control:focus .checkbox-mark {
+.control:focus-within .checkbox-mark {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83b3d3;
   border-radius: 4px;
@@ -771,15 +804,15 @@ body {
 }
 
 .control:hover .radio-mark {
-  background: rgba(255, 255, 255, 0.6);
+  background: #ffffff;
 }
 
 .control:active .radio-mark {
-  background: rgba(255, 255, 255, 0.3);
+  background: #ffffff;
 }
 
-.control:focus .radio-mark {
-  background: rgba(255, 255, 255, 0.6);
+.control:focus-within .radio-mark {
+  background: #ffffff;
   outline: 3px solid #83b3d3;
 }
 
@@ -893,6 +926,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
   background-color: transparent;
+  appearance: none;
 }
 
 .to {
@@ -911,20 +945,16 @@ body {
 
 .from:focus,
 .to:focus {
-  border: 3px solid #81b3d2;
+  outline: 3px solid #81b3d2;
   box-shadow: 0 0 0 3px #81b3d2;
 }
 
-.from::-webkit-outer-spin-button,
-.from::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+.from[type="number"] {
+  appearance: textfield;
 }
 
-.to::-webkit-outer-spin-button,
-.to::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+.to[type="number"] {
+  appearance: textfield;
 }
 
 .button-filter {
@@ -992,6 +1022,8 @@ body {
   margin-right: auto;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  appearance: none;
+  background: url("../images/icons/icon-select.svg") no-repeat 258px center #ffffff;
 }
 
 .sort:hover,
@@ -999,14 +1031,14 @@ body {
   outline: 2px solid #68a2ca;
 }
 
-.sort:active,
-.amount select:active {
-  outline: 2px solid #3f5e72;
-}
-
 .sort:focus,
 .amount select:focus {
   outline: 2px solid #68a2ca;
+}
+
+.sort:active,
+.amount select:active {
+  outline: 2px solid #3f5e72;
 }
 
 .sort:disabled,
@@ -1078,6 +1110,8 @@ body {
 }
 
 .favorite {
+  display: block;
+  align-self: center;
   text-align: center;
   min-width: 140px;
   margin: 0;
@@ -1115,6 +1149,8 @@ body {
 }
 
 .more {
+  display: block;
+  align-self: center;
   text-align: center;
   min-width: 140px;
   background-color: #756157;
@@ -1136,6 +1172,8 @@ body {
 }
 
 .rating {
+  display: block;
+  align-self: center;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -1223,10 +1261,6 @@ body {
   gap: 51px;
 }
 
-.amount select::-webkit-appearance {
-  background: url("../images/icons/icon-select.svg") no-repeat 128px center;
-}
-
 .amount select {
   font-family: inherit;
   width: 160px;
@@ -1235,6 +1269,8 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding: 12px 17px;
+  appearance: none;
+  background: url("../images/icons/icon-select.svg") no-repeat 128px center #ffffff;
 }
 
 /*Модальное окно*/
@@ -1478,7 +1514,7 @@ body {
 
 .guest-amount::-webkit-outer-spin-button,
 .guest-amount::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-apperance: none;
   margin: 0;
 }
 
